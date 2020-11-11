@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BREAKFREE TRADE</title>
+</head>
+
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+    .logo {
+        margin-top: 3px;
+        margin-right: 300px;
+        position: relative;
+    }
+    
+    .logo img {
+        animation-name: logow;
+        animation-iteration-count: 1;
+        animation-duration: 1s;
+        animation-timing-function: 2s;
+        position: relative;
+        border: 2px solid white;
+        margin-left: 5px;
+        border-radius: 10px;
+    }
+    
+    @keyframes logow {
+        from {
+            width: 400px;
+            height: 70px;
+        }
+        to {
+            width: 200px;
+            height: 70px;
+        }
+    }
+    
+    .navbar {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        box-shadow: 2px 2px 20px rgb(0, 0, 0);
+        position: fixed;
+        animation-name: navw;
+        animation-iteration-count: 1;
+        animation-duration: 2s;
+        background-color: rgba(0, 0, 0, 0.918);
+        border-radius: 10px;
+    }
+    
+    @keyframes navw {
+        from {
+            height: 400px;
+        }
+        to {
+            flex-direction: row;
+        }
+    }
+    
+    @media (max-width:1247px) {
+        .navbar {
+            margin: 0px;
+            width: 100vw;
+        }
+        .logo {
+            margin: 0px;
+        }
+    }
+    
+    @media(max-width:959px) {
+        body {
+            margin: 0px;
+            overflow-x: hidden;
+        }
+        .navbar {
+            flex-direction: column;
+            display: flex;
+        }
+        .logo {
+            text-align: center;
+        }
+        .unlist {
+            width: 750px;
+            margin: auto;
+        }
+        .excel iframe {
+            widows: 200px;
+        }
+        .excel-show {
+            margin: 0px;
+        }
+    }
+    
+    .unlist {
+        display: flex;
+        margin-right: 30px;
+    }
+    
+    .unlist li {
+        list-style: none;
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 50px;
+        border: 4px solid rgba(255, 254, 254, 0);
+    }
+    
+    .unlist li a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        border: 4px solid rgba(255, 255, 255, 0);
+        font-size: 1.2rem;
+        border-radius: 10px;
+        font-weight: bold;
+        padding: 0px 15px;
+    }
+    
+    .unlist li a:hover {
+        color: rgb(12, 12, 12);
+        transition: ease-in-out 0.4s;
+        font-weight: 900;
+        font-size: 1.2rem;
+        background-color: rgba(253, 253, 253, 0.966);
+        box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.561);
+    }
+    
+    .animated-area {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        text-align: center;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.616);
+    }
+    
+    .content {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: url('https://drive.google.com/uc?id=1Z8F8iC_9cbp7UyG9tHkmWfxaeGqc8wxZ') no-repeat center center/cover;
+    }
+    
+    .left {
+        width: 50%;
+    }
+    
+    .video-right video {
+        overflow: hidden;
+    }
+    
+    .text {
+        color: rgba(255, 255, 255, 0.685);
+        margin-bottom: 60px;
+    }
+    
+    .animated-area h1 {
+        font-size: 2.5rem;
+    }
+    
+    .animated-area span:before {
+        content: '';
+        animation-name: hname;
+        font-size: larger;
+        animation: hname 15s ease-in-out infinite;
+    }
+    
+    @keyframes hname {
+        1% {
+            content: 'TRADE is OUR hobby';
+        }
+        20% {
+            content: 'We believe next Generation Of Trading has Arrived';
+        }
+        40% {
+            content: 'Trading – It Looks Good on You.';
+        }
+        60% {
+            content: 'Nothing Acts Faster Than Trading';
+        }
+        80% {
+            content: 'Build your net worth.';
+        }
+        100% {
+            content: 'Build your net worth.';
+        }
+    }
+    
+    #pnshow span::before {
+        color: rgb(255, 255, 255);
+        animation-name: pnshow;
+        animation-iteration-count: infinite;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+    }
+    
+    @keyframes pnshow {
+        0% {
+            content: ' All elements are operating alone.';
+        }
+        20% {
+            content: 'Always grasp who you lecture.';
+        }
+        40% {
+            content: 'If it’s in your heart, It Shows In Your Spirit';
+        }
+        60% {
+            content: 'Double the Pleasure, Double the Trading. Can you feel Trading?';
+        }
+        75% {
+            content: 'Double the Pleasure, Double the Trading. Can you feel Trading?';
+        }
+        100% {
+            content: 'Draper. Created for the trade.Drive for show, Putt for Dough. Energy that showing.';
+        }
+    }
+    
+    #btn {
+        text-decoration: none;
+        border: 1px solid rgba(165, 165, 165, 0.534);
+        font-size: 1.5rem;
+        color: rgba(255, 255, 255, 0.822);
+        font-weight: lighter;
+        padding: 15px 30px;
+        border-radius: 20px;
+        margin: 30px;
+        box-shadow: 2px 2px 22px rgb(97, 97, 97);
+    }
+    
+    #btn:hover {
+        background-color: rgba(128, 128, 128, 0.918);
+        color: rgb(0, 0, 0);
+        transition: all ease-in 0.3s;
+    }
+    
+    .video-p {
+        display: grid;
+        grid-template-columns: 700px 100fr;
+        grid-template-rows: 150px 130px;
+        align-items: center;
+        width: 90vw;
+        margin: auto;
+    }
+    
+    .video-p video {
+        text-align: center;
+        align-self: center;
+        border-radius: 30px;
+    }
+    
+    .about-vp h1 {
+        text-align: center;
+        padding: 20px;
+        color: white;
+        margin: auto;
+        margin-bottom: 70px;
+        padding-bottom: 0px;
+        width: 400px;
+        border-radius: 40px;
+        font-weight: bolder;
+    }
+    
+    .para {
+        color: white;
+    }
+    
+    .about-vp {
+        margin-top: 30px;
+        height: 200vh;
+        background-color: rgb(0, 0, 0);
+        margin: 0;
+        height: 250%;
+        overflow: hidden;
+    }
+    
+    .gridv {
+        margin-top: 100px;
+    }
+    
+    .logo-list {
+        display: flex;
+        justify-content: space-between;
+        background: white;
+        border-top: 2px solid rgb(0, 0, 0);
+        width: 80vw;
+        height: 10vh;
+        margin: auto;
+    }
+    
+    .logo-list li {
+        text-decoration: none;
+        list-style: none;
+        text-align: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+    
+    .page-logo {
+        width: 100vw;
+    }
+    
+    .excel {
+        height: 120vh;
+        width: 60vw;
+        margin: auto;
+        margin-top: 100px;
+    }
+    
+    .excel-show {
+        margin-top: 150px;
+        width: 100vw;
+        background-color: black;
+    }
+    
+    .animated-area video {
+        border-radius: 10px;
+        position: relative;
+        bottom: 5px;
+        color: rgba(43, 43, 204, 0.829);
+    }
+    
+    #white {
+        color: rgb(255, 255, 255);
+    }
+    
+    .copy {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100vw;
+        height: 30vh;
+        background: rgb(27, 27, 27);
+    }
+    
+    .copy h3 {
+        margin: 30px;
+        padding: 0px 40px;
+        border-radius: 10px;
+        background: rgba(0, 0, 0, 0.678);
+        color: white;
+        border-radius: 20px;
+    }
+    
+    .copy p {
+        color: white;
+        margin-bottom: 20px;
+        font-weight: 200;
+    }
+    
+    footer {
+        margin: 0;
+        padding: 0;
+    }
+    
+    footer {
+        width: 100vw;
+    }
+</style>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://drive.google.com/uc?id=13oMRJVouKEKpk4fxB0EGPuwAHw8Ayd6w" width="200px" height="70px" alt="something went wrong">
+        </div>
+        <div class="list">
+            <ul class="unlist">
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+                <li><a href="service.html">Services</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="content">
+        <div class="animated-area">
+            <div class="left">
+
+                <h3 class="text">At Breakfree <span></span> </h3>
+
+                <h1 class="text" id="white">
+                    BreakFree Trading
+                </h1>
+
+                <p id="pnshow " class="text "><span></span></p>
+
+                <a id="btn" href="contacts.html">Contact Now</a>
+
+
+            </div>
+
+            <div class="video-right">
+                <video controls autoplay src="https://drive.google.com/uc?id=11Dpq9P-YNtznPAcUkDZV2Ki3zATCJU-u " width="500px"></video>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="about-vp ">
+        <h1>
+            Stock Market Experts Views and Advice </h1>
+        <div class="gridv ">
+            <div class="video-p">
+                <video controls src="https://drive.google.com/uc?id=11Dpq9P-YNtznPAcUkDZV2Ki3zATCJU-u " width="450px ">
+                </video>
+                <p class="para ">Online Trading and Investment Platform. 10$ Minimum Deposit. 1$ Minimum Investment. IQ Option - Simple and Secure Trading Platform. Open Free Demo Account in 5 sec.Trade is a basic economic concept involving the buying and selling of goods
+                    and services, with compensation paid by a buyer to a seller, or the exchange of goods or services between parties.</p>
+            </div>
+            <div class="video-p">
+                <p class="para ">Trade involves the transfer of goods or services from one person or entity to another, often in exchange for money. Economists refer to a system or network that allows trade as a market.Trade is critical to America's prosperity - fueling
+                    economic growth, supporting good jobs at home, raising living standards and helping Americans provide for their families with affordable goods and services.</p>
+                <video controls src=" https://drive.google.com/uc?id=11OW8MLbFuD4CeVnMGl_cg7qkg6gzcfWS " width="450px ">
+                </video>
+            </div>
+            <div class="video-p">
+                <video controls src="https://drive.google.com/uc?id=11Ikdv7hK_7ZsLYo_AvWb6CYuUn1NKsSi " width="450px ">
+                </video>
+                <p class="para "> Services accounted for $1.3 trillion in total (two way) U.S. trade during 2017, up 5.6% from 2016, and up 56% from 2007. The United States is the largest services trading country in the world. rom selling, or earning. The invention of
+                    money (and later of credit, paper money and non-physical money) greatly simplified and promoted trade. Trade between two traders is called bilateral trade, while trade involving more than two traders is called multilateral trade</p>
+            </div>
+            <div class="video-p">
+                <p class="para "> the world's largest economy and the largest exporter and importer of goods and services. Trade is critical to America's prosperity - fueling economic growth, supporting good jobs at home, Retail trade consists of the sale of goods or merchandise
+                    from a very fixed location (such as a department store, boutique or kiosk), online or by mail, in small or individual lots for direct consumption or use by the purchaser Economists refer to a system or network that allows trade as
+                    a market</p>
+                <video controls src="https://drive.google.com/uc?id=11Dpq9P-YNtznPAcUkDZV2Ki3zATCJU-u " width="450px ">
+                </video>
+            </div>
+            <div class="video-p">
+                <video controls src="https://drive.google.com/uc?id=11OW8MLbFuD4CeVnMGl_cg7qkg6gzcfWS " width="450px ">
+                </video>
+                <p class="para ">Historically, openness to free trade substantially increased in some areas from 1815 to the outbreak of World War I[citation needed] in 1914. Trade openness increased again during the 1920s, but collapsed (in particular in Europe and North
+                    America) during the Great Depression of the 1930s Economists refer to a system or network that allows trade as a market</p>
+            </div>
+        </div>
+    </section>
+    <section class="page-logo ">
+        <ul class="logo-list ">
+            <li> <img src="https://drive.google.com/uc?id=11-gQjomLOxyRxOy41oqsEUaB3oKbvcjJ " width="200px "> </li>
+            <li><img src="https://drive.google.com/uc?id=10z-Oee2SeZ3Zekzmj5gDQu0skldCthvg " width="200px "></li>
+            <li><img src="https://drive.google.com/uc?id=10wiAQ-woKfg-9Gc14MTAOctEC3-F4iXZ " width="200px "></li>
+        </ul>
+
+    </section>
+
+    <section class="excel-show">
+        <hr>
+        <div class="excel">
+            <h1>Trading excel spreadsheet</h1>
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQoTf1o_6P6KGpYnL5v_AR5qsuK4p2Ua4WZOk8CLzW32sGJZ9xu_HGkpY69Ls-X_w/pubhtml?widget=true&amp;headers=false " width="800px " height="600px "></iframe>
+        </div>
+    </section>
+    <section info-sec>
+
+        <div class="copy">
+            <h3>Make money Trading</h3>
+            <p> Trade involves the transfer of goods or services from one person or entity to another, often in exchange for money. Economists refer to a system or network that allows trade as a market. An early form of trade, barter, saw the direct exchange
+                of goods and services for other goods and services.</p>
+            <p>&COPY;copyright 2020</p>
+        </div>
+
+
+
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakfree-Services</title>
+</head>
+
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+    .logo {
+        margin-top: 3px;
+        margin-right: 300px;
+        position: relative;
+    }
+    
+    .logo img {
+        animation-name: logow;
+        animation-iteration-count: 1;
+        animation-duration: 1s;
+        animation-timing-function: 2s;
+        position: relative;
+        border: 2px solid white;
+        margin-left: 5px;
+        border-radius: 10px;
+    }
+    
+    @keyframes logow {
+        from {
+            width: 400px;
+            height: 70px;
+        }
+        to {
+            width: 200px;
+            height: 70px;
+        }
+    }
+    
+    .navbar {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        box-shadow: 2px 2px 20px rgb(0, 0, 0);
+        position: fixed;
+        animation-name: navw;
+        animation-iteration-count: 1;
+        animation-duration: 2s;
+        background-color: rgba(0, 0, 0, 0.918);
+        border-radius: 10px;
+    }
+    
+    @keyframes navw {
+        from {
+            height: 400px;
+        }
+        to {
+            height: 90px;
+        }
+    }
+    
+    @media (max-width:1247px) {
+        .navbar {
+            margin: 0px;
+            width: 100vw;
+        }
+        .logo {
+            margin: 0px;
+        }
+    }
+    
+    @media(max-width:959px) {
+        body {
+            margin: 0px;
+            overflow-x: hidden;
+        }
+        .navbar {
+            flex-direction: column;
+            display: flex;
+        }
+        .logo {
+            text-align: center;
+        }
+        .unlist {
+            width: 750px;
+            margin: auto;
+        }
+        .excel iframe {
+            widows: 200px;
+        }
+        .excel-show {
+            margin: 0px;
+        }
+    }
+    
+    .unlist {
+        display: flex;
+        margin-right: 30px;
+    }
+    
+    .unlist li {
+        list-style: none;
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 50px;
+        border: 4px solid rgba(255, 254, 254, 0);
+    }
+    
+    .unlist li a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        border: 4px solid rgba(255, 255, 255, 0);
+        font-size: 1.2rem;
+        border-radius: 10px;
+        font-weight: bold;
+        padding: 0px 15px;
+    }
+    
+    .unlist li a:hover {
+        color: rgb(12, 12, 12);
+        transition: ease-in-out 0.4s;
+        font-weight: 900;
+        font-size: 1.2rem;
+        background-color: rgba(253, 253, 253, 0.966);
+        box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.561);
+    }
+    
+    .animated-area {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(246, 246, 246);
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .text {
+        color: rgba(0, 0, 0, 0.685);
+        margin-bottom: 10px;
+    }
+    
+    .animated-area h1 {
+        font-size: 2.5rem;
+    }
+    
+    .animated-area span:before {
+        content: '';
+        animation-name: hname;
+        font-size: larger;
+        animation-iteration-count: infinite;
+        animation-duration: 15s;
+        color: rgb(0, 0, 0);
+    }
+    
+    @keyframes hname {
+        1% {
+            content: 'TRADE is OUR hobby';
+        }
+        20% {
+            content: 'We believe next Generation Of Trading has Arrived';
+        }
+        40% {
+            content: 'Trading – It Looks Good on You.';
+        }
+        60% {
+            content: 'Nothing Acts Faster Than Trading';
+        }
+        80% {
+            content: 'Build your net worth.';
+        }
+        100% {
+            content: 'Build your net worth.';
+        }
+    }
+    
+    .content-services {
+        display: flex;
+        justify-content: space-between;
+        width: 60vw;
+        margin: auto;
+    }
+    
+    .img-p {
+        width: 200px;
+        height: 60vh;
+        border-radius: 10px;
+        padding: 6px;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 2px 2px 20px black;
+    }
+    
+    .img-p img {
+        padding: 20px;
+    }
+    
+    .service-h1 {
+        text-align: center;
+        padding-top: 150px;
+        padding-bottom: 50px;
+        font-weight: 900;
+        font-size: 2rem;
+    }
+    
+    .s-unlistt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .s-unlist p {
+        margin: 20px;
+    }
+    
+    .ul-service {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+    }
+    
+    .ul-service li {
+        list-style: none;
+        margin: 20px;
+    }
+    
+    .copy h3 {
+        margin: 0 20px;
+        padding: 0px 40px;
+        border-radius: 10px;
+        color: white;
+    }
+    
+    #white {
+        color: rgb(0, 0, 0);
+    }
+    
+    span {
+        color: rgb(87, 87, 252);
+    }
+    
+    .copy {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100vw;
+        height: 30vh;
+        background: rgb(27, 27, 27);
+    }
+    
+    .copy h3 {
+        margin: 30px;
+        padding: 0px 40px;
+        border-radius: 10px;
+        background: rgba(0, 0, 0, 0.678);
+        color: white;
+        border-radius: 20px;
+    }
+    
+    .copy p {
+        color: white;
+        margin-bottom: 20px;
+        font-weight: 200;
+    }
+</style>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://drive.google.com/uc?id=13oMRJVouKEKpk4fxB0EGPuwAHw8Ayd6w" width="200px" height="70px" alt="something went wrong">
+        </div>
+        <div class="list">
+            <ul class="unlist">
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+                <li><a href="service.html">Services</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+
+        <h1 class="service-h1">Our Services</h1>
+        <div class="content-services">
+            <div class="img-p">
+                <Img src="https://drive.google.com/uc?id=10smUtstNziJTwhRkgdH55UC3COYUqCqP">
+                </img>
+                <P> Financial articles, stock market books, website tutorials, etc. There's a wealth of information out there and much of it inexpensive to tap. It's important not to focus too narrowly on one single aspect of the trading game. Instead, study
+                    everything market-wise, including ideas and concepts you don't feel are particularly relevant at this time. Trading launches a journey that often winds up at a destination not anticipated at the starting line</P>
+            </div>
+            <div class="img-p">
+                <Img src="https://drive.google.com/uc?id=10tPWUdkNLt_-XquSokfSzWOqxh7y9uoH">
+                </img>
+                <P> Start with a self-examination that takes a close look at your relationship with money. Do you view life as a struggle, with a hard effort required to earn each dollar? Do you believe personal magnetism will attract market wealth to you
+                    in the same way it does in other life pursuits? More ominously, have you lost money on a regular basis through other activities and hope the financial markets will treat you more kindly? </P>
+            </div>
+            <div class="img-p">
+                <Img src="https://drive.google.com/uc?id=10vinjXqnftQ-8b9fEODixcJvWl58sYUs">
+                </img>
+                <P> Millions of neophytes try their hand at the market casino each year, but most walk away a little poorer and a lot wiser, having never reached their full potential. The majority of those who fail have one thing in common: They haven't mastered
+                    the basic skills needed to tilt the odds in their favor. However, if one takes adequate time to learn them, it's possible to be on the way to increasing one's odds of success. </P>
+            </div>
+        </div>
+        <div class="s-unlist">
+            <ul class="ul-service">
+                <li>
+                    <a href="https://twitter.com/login?lang=en">
+                        <img src="https://drive.google.com/uc?id=1bO8ecl4R7ZnTmS2a3DoE-ZnoqycjflW6" alt="" width="25px">
+
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/">
+                        <img src="https://drive.google.com/uc?id=1-ZNfHAEAcFLl_D4NCLdvUDExHqnIGKel" alt="" width="17px">
+
+                    </a>
+                </li>
+                <li>
+
+                    <a href="https://www.instagram.com/accounts/login/">
+                        <img src="https://drive.google.com/uc?id=1oKd0Q-PdJ8lX-535VeRF70RXJO8u3_hX" alt="" width="25px"></a>
+                </li>
+            </ul>
+            <P> Trade in services records the value of services exchanged between residents and non-residents of an economy, including services provided through foreign affiliates established abroad. This indicator is measured in million USD and percentage
+                of GDP for exports, imports and net trade. Services include transport (both freight and passengers), travel, communications services (postal, telephone, satellite, etc.)</P>
+        </div>
+    </section>
+    <footer info-sec>
+        <div class="copy">
+            <h3>Make money Trading</h3>
+            <p> Trade involves the transfer of goods or services from one person or entity to another, often in exchange for money. Economists refer to a system or network that allows trade as a market. An early form of trade, barter, saw the direct exchange
+                of goods and services for other goods and services.</p>
+            <p>&COPY;copyright 2020</p>
+        </div>
+
+
+    </footer>
+</body>
+
+</html>

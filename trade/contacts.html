@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakfree-contact-Us</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+    .logo {
+        margin-top: 3px;
+        margin-right: 300px;
+        position: relative;
+    }
+    
+    .logo img {
+        animation-name: logow;
+        animation-iteration-count: 1;
+        animation-duration: 1s;
+        animation-timing-function: 2s;
+        position: relative;
+        border: 2px solid white;
+        margin-left: 5px;
+        border-radius: 10px;
+    }
+    
+    @keyframes logow {
+        from {
+            width: 400px;
+            height: 70px;
+        }
+        to {
+            width: 200px;
+            height: 70px;
+        }
+    }
+    
+    .navbar {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        box-shadow: 2px 2px 20px rgb(0, 0, 0);
+        position: fixed;
+        animation-name: navw;
+        animation-iteration-count: 1;
+        animation-duration: 2s;
+        background-color: rgba(0, 0, 0, 0.918);
+        border-radius: 10px;
+    }
+    
+    @keyframes navw {
+        from {
+            height: 400px;
+        }
+        to {
+            height: 90px;
+        }
+    }
+    
+    .unlist {
+        display: flex;
+        margin-right: 30px;
+    }
+    
+    .unlist li {
+        list-style: none;
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 50px;
+        border: 4px solid rgba(255, 254, 254, 0);
+    }
+    
+    .unlist li a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        border: 4px solid rgba(255, 255, 255, 0);
+        font-size: 1.2rem;
+        border-radius: 10px;
+        font-weight: bold;
+        padding: 0px 15px;
+    }
+    
+    .unlist li a:hover {
+        color: rgb(12, 12, 12);
+        transition: ease-in-out 0.4s;
+        font-weight: 900;
+        font-size: 1.2rem;
+        background-color: rgba(253, 253, 253, 0.966);
+        box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.561);
+    }
+    
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .contact {
+        background: black;
+        width: 100vw;
+        height: 110vh;
+    }
+    
+    .contact .h1 {
+        text-align: center;
+        font-weight: bolder;
+        padding-top: 100px;
+        color: white;
+    }
+    
+    .contact-form {
+        display: flex;
+        justify-content: space-between;
+        width: 80vw;
+        height: 80vh;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.486);
+        text-align: center;
+        align-items: center;
+        border-radius: 10px;
+        margin-top: 6px;
+    }
+    
+    .contact-left {
+        margin-left: 10px;
+        border-right: 4px solid rgba(214, 32, 62, 0.541);
+    }
+    
+    .contact-left li {
+        list-style: none;
+        margin: 30px;
+        border-bottom: 2px solid rgba(255, 0, 0, 0.616);
+        padding: 10px;
+        font-size: 1.2rem;
+        display: inline block;
+    }
+    
+    .container-li {
+        margin-top: 35px;
+    }
+    
+    .container-li input {
+        padding: 6px 20px;
+        outline: none;
+        border: none;
+        align-self: center;
+        text-align: center;
+        background-color: rgba(253, 253, 253, 0.692);
+        border-radius: 10px;
+    }
+    
+    .container-li input:hover {
+        background-color: white;
+        transition: all ease-in-out 0.3s;
+    }
+    
+    .contact-right {
+        margin: 100px;
+    }
+    
+    .contact-right textarea {
+        padding: 20px 40px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        background-color: rgba(253, 253, 253, 0.692);
+    }
+    
+    .contact-right textarea:hover {
+        background-color: white;
+        transition: all ease-in-out 0.3s;
+    }
+    
+    #btns {
+        padding: 7px 24px;
+        font-size: 1rem;
+        border-radius: 9px;
+        outline: none;
+        border: none;
+        box-shadow: 1px 1px 12px rgb(0, 0, 0);
+        margin-top: 20px;
+    }
+    
+    #btns:hover {
+        background: rgb(17, 17, 17);
+        color: white;
+        transition: all ease-in-out 0.4s;
+        margin-top: 18px;
+    }
+    
+    .copy {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100vw;
+        height: 30vh;
+        background: rgb(27, 27, 27);
+    }
+    
+    .copy h3 {
+        margin: 30px;
+        padding: 0px 40px;
+        border-radius: 10px;
+        background: rgba(0, 0, 0, 0.678);
+        color: white;
+        border-radius: 20px;
+    }
+    
+    .copy p {
+        color: white;
+        margin-bottom: 20px;
+        font-weight: 200;
+    }
+</style>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://drive.google.com/uc?id=13oMRJVouKEKpk4fxB0EGPuwAHw8Ayd6w" width="200px" height="70px" alt="something went wrong">
+        </div>
+        <div class="list">
+            <ul class="unlist">
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+                <li><a href="service.html">Services</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="contact">
+        <h1 class="h1">Contact Us</h1>
+        <div class="contact-form">
+            <div class="contact-left">
+                <h1>Details</h1>
+                <ul class="imgsv">
+                    <li> <img src="https://drive.google.com/uc?id=1Go1tAiFfv1YiLEmzkMtmYCMOb6GgKPUJ" alt="" width="40px"> Phone Number:+818328099779</li>
+                    <li><img src="https://drive.google.com/uc?id=1IyNJmBsoVcO5pv-sq89sIvrzwWLcjyLN" alt="" width="40px"> Email:mdbasheerb252@gmail.com</li>
+                    <li><img src="https://drive.google.com/uc?id=1I1MiM20zvziSMIdUTmLJ8ul-KKx1RxNg" alt="" width="40px"> Contact:feel free to contact us </li>
+                </ul>
+
+            </div>
+            <form class="contact-right">
+                <div class="container-li">
+                    <Label>Name:</Label>
+                    <Input type="text " placeholder="EX: your name">
+                </div>
+                <div class="container-li">
+                    <Label>Phone no:</Label>
+                    <Input type="text " placeholder="EX: 918328099779">
+                </div>
+                <div class="container-li">
+                    <Label>Email:</Label>
+                    <Input type="text" placeholder="EX: abcd@gmail.com">
+                </div>
+                <div class="container-li">
+                    <textarea placeholder=" enter message... "></textarea>
+                </div>
+                <button id="btns">Submit</button>
+            </form>
+        </div>
+
+    </div>
+    </div>
+    <footer info-sec>
+        <div class="copy">
+            <h3>Make money Trading</h3>
+            <p> Trade involves the transfer of goods or services from one person or entity to another, often in exchange for money. Economists refer to a system or network that allows trade as a market. An early form of trade, barter, saw the direct exchange
+                of goods and services for other goods and services.</p>
+            <p>&COPY;copyright 2020</p>
+        </div>
+
+
+    </footer>
+</body>
+
+</html>
